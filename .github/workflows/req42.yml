@@ -29,17 +29,17 @@ jobs:
 
     - name: Set up docToolchain
       run: |
-        chmod +x req42/dtcw
+        chmod +x dtcw
         ./req_doc/dtcw install doctoolchain
 
     - name: Generate Req42 HTML documentation
       run: |
-        ./req42/dtcw generateHTML
+        ./dtcw generateHTML
 
     - name: Move documentation to root of gh-pages folder
       run: |
         mkdir -p out
-        cp -r req_doc/build/html5/* out/
+        cp -r build/html5/* out/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
