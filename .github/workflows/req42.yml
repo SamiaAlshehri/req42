@@ -30,7 +30,7 @@ jobs:
     - name: Set up docToolchain
       run: |
         chmod +x dtcw
-        ./req_doc/dtcw install doctoolchain
+        ./dtcw install doctoolchain
 
     - name: Generate Req42 HTML documentation
       run: |
