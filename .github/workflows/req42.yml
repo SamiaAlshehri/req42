@@ -3,7 +3,7 @@ name: Req42 Documentation
 on:
   push:
     branches:
-      - main
+      - clean-branch
   pull_request:
     branches:
       - main
