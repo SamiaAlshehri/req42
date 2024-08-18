@@ -29,12 +29,12 @@ jobs:
 
     - name: Set up docToolchain
       run: |
-        chmod +x req_doc/dtcw
+        chmod +x req42/dtcw
         ./req_doc/dtcw install doctoolchain
 
     - name: Generate Req42 HTML documentation
       run: |
-        ./req_doc/dtcw generateHTML
+        ./req42/dtcw generateHTML
 
     - name: Move documentation to root of gh-pages folder
       run: |
